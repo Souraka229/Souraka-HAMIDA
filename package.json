@@ -1,0 +1,38 @@
+{
+  "name": "professional-platform",
+  "version": "1.0.0",
+  "description": "Professional software platform for code generation, data visualization, and presentations",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "^16.0.0",
+    "@supabase/supabase-js": "^2.38.4",
+    "@supabase/ssr": "^0.0.10",
+    "recharts": "^2.10.3",
+    "date-fns": "^3.0.0",
+    "papaparse": "^5.4.1",
+    "clsx": "^2.0.0",
+    "tailwindcss": "^3.3.6",
+    "lucide-react": "^0.294.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.1.2",
+    "ai": "^6.0.0",
+    "@ai-sdk/openai": "^0.0.16"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/papaparse": "^5.3.14",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16"
+  }
+}
