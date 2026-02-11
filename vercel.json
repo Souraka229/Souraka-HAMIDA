@@ -1,0 +1,60 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "name": "BuildStudio",
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": [
+    {
+      "key": "NEXT_PUBLIC_SUPABASE_URL",
+      "description": "Supabase URL",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "description": "Supabase Anon Key",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "SUPABASE_SERVICE_ROLE_KEY",
+      "description": "Supabase Service Role Key",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "OPENAI_API_KEY",
+      "description": "OpenAI API Key",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "GROQ_API_KEY",
+      "description": "Groq API Key (optional)",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "JSONBIN_BIN_ID",
+      "description": "JSONBin Bin ID (optional)",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "JSONBIN_API_KEY",
+      "description": "JSONBin API Key (optional)",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "functions": {
+    "app/api/**": {
+      "maxDuration": 30
+    }
+  },
+  "regions": ["iad1"],
+  "crons": []
+}
